@@ -148,7 +148,7 @@ body {
 .main-white-button a {
   font-size: 13px;
   color: #fb5849;
-  background-color: #fff;
+  background-color: #d9d9d9;
   padding: 12px 25px;
   display: inline-block;
   border-radius: 3px;
@@ -939,14 +939,13 @@ menu
 }
 
 .Info {
-  position: relative;
+  position: fixed;
+  bottom: 0;
   width: 100%;
-  background-color: #ffffff79;
-  border: 1px solid #000000;
-  transform: translateY(100%)
-  translateY(120px)
-  translateZ(0);
+  height: 100px; /* contoh tinggi tetap */
+  background-color: rgba(229, 192, 192, 0.7);
   transition: transform 0.5s ease-out;
+  overflow: hidden; /* supaya konten yang berlebih tidak mengubah ukuran */
 }
 
 .card:hover .info,
@@ -959,7 +958,8 @@ menu
   padding: 30px 30px 20px 30px;
   font-size: 20px;
   font-weight: 700;
-  color: #fff;
+  color: #000;
+  text-align: center; /* ini yang membuat teks di tengah */
 }
 
 .description {
@@ -974,7 +974,7 @@ menu
   background-color: #40ff00;
   font-size: 20px;
   font-weight: 700;
-  color: #fff;
+  color:#000;
   border-radius: 3px;
   text-align: center;
   line-height: 70px;
@@ -1161,6 +1161,7 @@ chefs
 
 #chefs .chef-item .down-content {
   padding: 20px 0px;
+    background-color: #D9D9D9;
 }
 
 #chefs .chef-item .down-content h4 {
@@ -1173,6 +1174,7 @@ chefs
 #chefs .chef-item .down-content span {
   font-size: 14px;
   color: #2a2a2a;
+
 }
 
 
@@ -1215,7 +1217,7 @@ reservation
 
 #reservation .phone,
 #reservation .message {
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 00.5);
   border-radius: 5px;
   text-align: center;
   padding: 0px 0px 20px 0px;
@@ -1261,8 +1263,9 @@ reservation
 #contact {
   margin-left: 30px;
   padding: 45px 30px;
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
+  border: 2px solid #FFD429;
 }
 
 #contact h4 {
